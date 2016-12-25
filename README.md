@@ -1,4 +1,4 @@
-**cusatexams-cli**  [![build status](https://gitlab.com/doylefermi/cusatexams-cli/badges/master/build.svg)](https://gitlab.com/doylefermi/cusatexams-cli/commits/master)
+**cusatexams-cli**  [![build status](https://gitlab.com/doylefermi/cusatexams-cli/badges/devel/build.svg)](https://gitlab.com/doylefermi/cusatexams-cli/commits/master)
 ==============
 
 **Todo**
@@ -8,6 +8,7 @@
 - [ ] Create report card
 - [ ] Custom GPA finder (for failed candidates)
 - [ ] Easy the long commands
+- [ ] Check for all exceptions
 
 **Usage**
 

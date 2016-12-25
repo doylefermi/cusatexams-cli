@@ -9,6 +9,8 @@ from ..tableparser import HTMLTableParser
 
 import re
 import requests
+from texttable import Texttable
+from ascii_graph import Pyasciigraph
 
 def fetchhtml(regno,semester,month,year,result_type):
     payload =  {}
@@ -50,6 +52,9 @@ def fetchjson(html):
             for l in lists[1::]:
                 marks[l[0]] = l
         #print (marks)
+        if len(marks)==0:
+            return(-1)
+            
         final = {}
         final['details'] = details
         final['marklist'] = marks
@@ -57,8 +62,8 @@ def fetchjson(html):
             final['gpa'] = gpa[0]
         except IndexError:
             final['gpa'] = 'null'
-            
-        return (dumps(final, indent=2, sort_keys=True))
+          
+        return (final)
    
 class Fetch(Base):
     """Decode HTML, returns JSON"""
@@ -67,4 +72,33 @@ class Fetch(Base):
         #print ('You supplied the following options:', dumps(self.options, indent=2, sort_keys=True))
         html = fetchhtml(self.options["<regno>"],self.options["<sem>"],self.options["<month>"],self.options["<year>"],self.options["<type>"])
         response = fetchjson(html)
-        print (response)
+        #print (dumps(response, indent=2, sort_keys=True))
+        
+        if response == -1:
+            print("Details unavailable at exam.cusat.ac.in")
+            return -1
+        
+        rows = []
+        l1=[]
+        l2=[]
+        for i,j in response["details"].items():
+            l1.append(i)
+            l2.append(j)
+
+        rows.append(l1)
+        rows.append(l2)
+        table = Texttable()
+        table.add_rows(rows)
+        print(table.draw())
+        
+        rows = []
+        rows.append(["SUBJECT",150])
+        for i,j in response["marklist"].items():
+            l = []
+            l.append(j[1] + " ("+re.findall(r"(?i)\b[a-zA-Z]\b",j[2])[0] + ")")
+            l.append(int(re.findall(r"[-+]?\d*\.\d+|\d+",j[2])[0]))
+            rows.append(l)
+        rows.sort(key=lambda x: x[1], reverse=True)
+        graph = Pyasciigraph()
+        for line in graph.graph('GPA: '+response["gpa"], rows):
+            print(line)
