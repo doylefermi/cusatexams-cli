@@ -2,17 +2,21 @@
 cusatexams
 
 Usage:
-  cusatexams hello
-  cusatexams fetch
+  cusatexams fetch <regno> <sem> <month> <year> <type>
   cusatexams -h | --help
   cusatexams --version
 
 Options:
   -h --help                         Show this screen.
   --version                         Show version.
+  <regno>                           CUSAT 8 digit register number [Eg: 12140834]
+  <sem>                             Semester number [Eg: 3]
+  <month>                           Month of exam [Eg: November]
+  <year>                            Year of exam [Eg: 2014]
+  <type>                            Type of exam [Eg: Regular, Revaluation, Supplementary, Improvement]
 
 Examples:
-  cusatexams hello
+  cusatexams fetch 12140834 3 November 2014 Regular
 
 Help:
   For help using this tool, please open an issue on the Github repository:

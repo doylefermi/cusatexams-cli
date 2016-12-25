@@ -33,7 +33,7 @@ setup(
     ],
     keywords = 'cli',
     packages = find_packages(exclude=['docs', 'tests*']),
-    install_requires = ['docopt','requests'],
+    install_requires = ['docopt','requests', 'HTMLParser'],
     entry_points = {
         'console_scripts': [
             'cusatexams=cusatexams.cli:main',

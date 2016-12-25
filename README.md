@@ -3,8 +3,11 @@
 
 **Todo**
 
-- [ ] Scrape from site
+- [x] Scrape from site
+- [x] Prepare JSON response
 - [ ] Create report card
+- [ ] Custom GPA finder (for failed candidates)
+- [ ] Easy the long commands
 
 **Usage**
 
