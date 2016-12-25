@@ -3,6 +3,7 @@ cusatexams
 
 Usage:
   cusatexams hello
+  cusatexams fetch
   cusatexams -h | --help
   cusatexams --version
 
