@@ -1,6 +1,9 @@
 #cusatexams-cli [![Build Status](https://travis-ci.org/doylefermi/cusatexams-cli.svg?branch=master)](https://travis-ci.org/doylefermi/cusatexams-cli)
 
 Command line utility for exam.cusat.ac.in
+
+**Install**: 
+>$ pip3 install git+git://github.com/doylefermi/cusatexams-cli.git@master
 	
 	Usage:
 	  cusatexams fetch <regno> <sem> <month> <year> <type>
