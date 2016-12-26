@@ -1,5 +1,5 @@
-**cusatexams-cli** [![Build Status](https://travis-ci.org/doylefermi/cusatexams-cli.svg?branch=master)](https://travis-ci.org/doylefermi/cusatexams-cli)
-==============
+#cusatexams-cli [![Build Status](https://travis-ci.org/doylefermi/cusatexams-cli.svg?branch=master)](https://travis-ci.org/doylefermi/cusatexams-cli)
+
 Command line utility for exam.cusat.ac.in
 	
 	Usage:
@@ -23,13 +23,11 @@ Command line utility for exam.cusat.ac.in
 	  For help using this tool, please open an issue on the Github repository:
 	  https://github.com/doylefermi/cusatexams-cli
 
-
-**Development**
-==============
+##Development
 
 >Note: Reduce pull requests to a single commit.
 
-**Todo**
+###Todo
 
 - [x] Scrape from site
 - [x] Prepare JSON response
@@ -38,7 +36,7 @@ Command line utility for exam.cusat.ac.in
 - [ ] Easy the long commands
 - [ ] Check for all exceptions
 
-**Usage**
+###Usage
 
 Clone the repo. Dive into the folder now.
 

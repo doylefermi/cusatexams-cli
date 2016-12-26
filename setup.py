@@ -29,7 +29,7 @@ setup(
         'License :: Public Domain',
         'Natural Language :: English',
         'Operating System :: OS Independent',
-        'Programming Language :: Python :: 3.x',
+        'Programming Language :: Python :: 3.5',
     ],
     keywords = 'cli',
     packages = find_packages(exclude=['docs', 'tests*']),
