@@ -1,12 +1,42 @@
-**cusatexams-cli**  [![build status](https://gitlab.com/doylefermi/cusatexams-cli/badges/master/build.svg)](https://gitlab.com/doylefermi/cusatexams-cli/commits/master)
-==============
+#cusatexams-cli [![Build Status](https://travis-ci.org/doylefermi/cusatexams-cli.svg?branch=master)](https://travis-ci.org/doylefermi/cusatexams-cli)
 
-**Todo**
+Command line utility for exam.cusat.ac.in
+	
+	Usage:
+	  cusatexams fetch <regno> <sem> <month> <year> <type>
+	  cusatexams -h | --help
+	  cusatexams --version
+	
+	Options:
+	  -h --help                         Show this screen.
+	  --version                         Show version.
+	  <regno>                           CUSAT 8 digit register number [Eg: 12140834]
+	  <sem>                             Semester number [Eg: 3]
+	  <month>                           Month of exam [Eg: November]
+	  <year>                            Year of exam [Eg: 2014]
+	  <type>                            Type of exam [Eg: Regular, Revaluation, Supplementary, Improvement]
+	
+	Examples:
+	  cusatexams fetch 12140834 3 November 2014 Regular
+	
+	Help:
+	  For help using this tool, please open an issue on the Github repository:
+	  https://github.com/doylefermi/cusatexams-cli
 
-- [ ] Scrape from site
+##Development
+
+>Note: Reduce pull requests to a single commit.
+
+###Todo
+
+- [x] Scrape from site
+- [x] Prepare JSON response
 - [ ] Create report card
+- [ ] Custom GPA finder (for failed candidates)
+- [ ] Easy the long commands
+- [ ] Check for all exceptions
 
-**Usage**
+###Usage
 
 Clone the repo. Dive into the folder now.
 
