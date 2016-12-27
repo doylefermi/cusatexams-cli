@@ -3,12 +3,17 @@ cusatexams
 
 Usage:
   cusatexams fetch <regno> <sem> <month> <year> <type>
+  cusatexams report [-t] <regno> <start_year> <end_year> [] [--format=<format>] [--custom-gpa=<gpa>] [--semester=<sem>] 
   cusatexams -h | --help
   cusatexams --version
 
 Options:
   -h --help                         Show this screen.
   --version                         Show version.
+  -t --trimmed                      Display trimmed output.
+  --custom-gpa=<gpa>                Set custom GPA even if GPA not obtained for that Sem. [Default: 5]
+  --semester=<sem>                  Choose a semester. [Default: all]
+  --format=<format>                 Output format (json|dict). [Default: json]
   <regno>                           CUSAT 8 digit register number [Eg: 12140834]
   <sem>                             Semester number [Eg: 3]
   <month>                           Month of exam [Eg: November]

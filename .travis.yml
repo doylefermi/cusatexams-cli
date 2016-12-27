@@ -4,5 +4,7 @@ python:
 install:
   - pip install -e .
   - python setup.py install
-script: cusatexams fetch 12140834 3 November 2014 Regular
+script: 
+  - cusatexams fetch 12140834 3 November 2014 Regular
+  - cusatexams report 12140816 2014 2016 --trimmed --custom-gpa=7
 
