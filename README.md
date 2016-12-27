@@ -4,6 +4,8 @@ Command line utility for exam.cusat.ac.in
 
 **Install**: 
 >$ pip3 install git+git://github.com/doylefermi/cusatexams-cli.git@master
+
+[![asciicast](https://asciinema.org/a/97406.png)](https://asciinema.org/a/97406)
 	
 	Usage:
 	  cusatexams fetch <regno> <sem> <month> <year> <type>
