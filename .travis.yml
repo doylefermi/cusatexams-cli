@@ -7,4 +7,5 @@ install:
 script: 
   - cusatexams fetch 12140834 3 November 2014 Regular
   - cusatexams report 12140816 2014 2016 --trimmed --custom-gpa=7
+  - cusatexams batch 12140800 12140929 6 April 2016 Regular
 

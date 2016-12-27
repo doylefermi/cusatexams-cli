@@ -8,6 +8,7 @@ Command line utility for exam.cusat.ac.in
 	Usage:
 	  cusatexams fetch <regno> <sem> <month> <year> <type>
 	  cusatexams report [-t] <regno> <start_year> <end_year> [--format=<format>] [--custom-gpa=<gpa>] [--semester=<sem>] 
+	  cusatexams batch <start_regno> <end_regno> <sem> <month> <year> <type>
 	  cusatexams -h | --help
 	  cusatexams --version
 	
@@ -28,10 +29,12 @@ Command line utility for exam.cusat.ac.in
 	  cusatexams fetch 12140834 3 November 2014 Regular
 	  cusatexams report 12140834 2014 2015 --custom-gpa=7 --sem=3
 	  cusatexams report 12140834 2014 2016 --trimmed
+	  cusatexams batch 12140800 12140929 6 April 2016 Regular
 	
 	Help:
 	  For help using this tool, please open an issue on the Github repository:
 	  https://github.com/doylefermi/cusatexams-cli
+	
 
 
 ##Development
@@ -44,6 +47,7 @@ Command line utility for exam.cusat.ac.in
 - [x] Prepare JSON response
 - [x] Create report card
 - [x] Custom GPA finder (for failed candidates)
+- [x] Batch process register numbers
 - [ ] Easy the long commands
 - [ ] Cusat notifications
 - [ ] Get student info given name
