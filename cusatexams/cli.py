@@ -3,7 +3,7 @@ cusatexams
 
 Usage:
   cusatexams fetch <regno> <sem> <month> <year> <type>
-  cusatexams report [-t] <regno> <start_year> <end_year> [] [--format=<format>] [--custom-gpa=<gpa>] [--semester=<sem>] 
+  cusatexams report [-t] <regno> <start_year> <end_year> [--format=<format>] [--custom-gpa=<gpa>] [--semester=<sem>] 
   cusatexams -h | --help
   cusatexams --version
 
@@ -22,6 +22,8 @@ Options:
 
 Examples:
   cusatexams fetch 12140834 3 November 2014 Regular
+  cusatexams report 12140834 2014 2015 --custom-gpa=7 --sem=3
+  cusatexams report 12140834 2014 2016 --trimmed
 
 Help:
   For help using this tool, please open an issue on the Github repository:

@@ -7,12 +7,17 @@ Command line utility for exam.cusat.ac.in
 	
 	Usage:
 	  cusatexams fetch <regno> <sem> <month> <year> <type>
+	  cusatexams report [-t] <regno> <start_year> <end_year> [--format=<format>] [--custom-gpa=<gpa>] [--semester=<sem>] 
 	  cusatexams -h | --help
 	  cusatexams --version
 	
 	Options:
 	  -h --help                         Show this screen.
 	  --version                         Show version.
+	  -t --trimmed                      Display trimmed output.
+	  --custom-gpa=<gpa>                Set custom GPA even if GPA not obtained for that Sem. [Default: 5]
+	  --semester=<sem>                  Choose a semester. [Default: all]
+	  --format=<format>                 Output format (json|dict). [Default: json]
 	  <regno>                           CUSAT 8 digit register number [Eg: 12140834]
 	  <sem>                             Semester number [Eg: 3]
 	  <month>                           Month of exam [Eg: November]
@@ -21,10 +26,13 @@ Command line utility for exam.cusat.ac.in
 	
 	Examples:
 	  cusatexams fetch 12140834 3 November 2014 Regular
+	  cusatexams report 12140834 2014 2015 --custom-gpa=7 --sem=3
+	  cusatexams report 12140834 2014 2016 --trimmed
 	
 	Help:
 	  For help using this tool, please open an issue on the Github repository:
 	  https://github.com/doylefermi/cusatexams-cli
+
 
 ##Development
 
@@ -34,10 +42,11 @@ Command line utility for exam.cusat.ac.in
 
 - [x] Scrape from site
 - [x] Prepare JSON response
-- [ ] Create report card
-- [ ] Custom GPA finder (for failed candidates)
+- [x] Create report card
+- [x] Custom GPA finder (for failed candidates)
 - [ ] Easy the long commands
-- [ ] Check for all exceptions
+- [ ] Cusat notifications
+- [ ] Get student info given name
 
 ###Usage
 
