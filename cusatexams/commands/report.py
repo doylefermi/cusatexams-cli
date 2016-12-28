@@ -25,8 +25,7 @@ class Report(Base):
         if self.options['--semester'] == "all":
             semesters = ["1&2","3","4","5","6","7","8"]
         else:
-            semesters = [self.options["--semester"]]
-        
+            semesters = self.options["--semester"].split()
         marklist = {}
         
         print("This is going to take a lot of time. Please wait.")
@@ -56,8 +55,9 @@ class Report(Base):
                 
         print("Final results:-")
         if self.options["--format"] == "json":
+            print("JSON Dump:-")
             print(dumps(marklist))
-        else:
+        elif self.options["--format"] == "dict":
             print("Python Dictionary:-")
             print (marklist)
                 

@@ -13,8 +13,8 @@ Options:
   --version                         Show version.
   -t --trimmed                      Display trimmed output.
   --custom-gpa=<gpa>                Set custom GPA even if GPA not obtained for that Sem. [Default: 5]
-  --semester=<sem>                  Choose a semester. [Default: all]
-  --format=<format>                 Output format (json|dict). [Default: json]
+  --semester=<sem>                  Choose a semester. Accepts a string of semesters separated by space. See example. [Default: all]
+  --format=<format>                 Output format (json|dict|none). [Default: none]
   <regno>                           CUSAT 8 digit register number [Eg: 12140834]
   <sem>                             Semester number [Eg: 3]
   <month>                           Month of exam [Eg: November]
@@ -23,7 +23,7 @@ Options:
 
 Examples:
   cusatexams fetch 12140834 3 November 2014 Regular
-  cusatexams report 12140834 2014 2015 --custom-gpa=7 --sem=3
+  cusatexams report 12140834 2014 2015 --custom-gpa=7 --sem="1&2 4 5"
   cusatexams report 12140834 2014 2016 --trimmed
   cusatexams batch 12140800 12140929 6 April 2016 Regular
 
