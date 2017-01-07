@@ -86,7 +86,7 @@ def handle_invalid_usage(error):
 
 @app.route("/")
 def api():
-    return "Checking travis API documentation goes here!"
+    return "API documentation"
     
 @app.route("/fetch/<regno>",methods=['GET'])
 def fetch(regno):
