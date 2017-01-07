@@ -17,3 +17,4 @@ deploy:
   on:
     repo: doylefermi/cusatexams-cli
     branch: api
+  deployment_branch: api
