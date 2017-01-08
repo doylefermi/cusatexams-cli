@@ -2,7 +2,7 @@
 
 Command line utility for exam.cusat.ac.in
 
-###Update: [API released](http://cusatexams-doylefermi.rhcloud.com/). [![Build Status](https://travis-ci.org/doylefermi/cusatexams-cli.svg?branch=api)](https://travis-ci.org/doylefermi/cusatexams-cli) [![Assertible test status](https://assertible.com/tests/0da8b3ac-7ce8-49ae-b6ef-5e55631e0e44/status?api_token=qcOpIiGT3XMLKA0B)](https://assertible.com/dashboard#/tests/0da8b3ac-7ce8-49ae-b6ef-5e55631e0e44)
+###Update: [API released](http://cusatexams-doylefermi.rhcloud.com/). [![Build Status](https://travis-ci.org/doylefermi/cusatexams-cli.svg?branch=api)](https://travis-ci.org/doylefermi/cusatexams-cli) [![Assertible test status](https://assertible.com/tests/6ec4de9f-63d4-4921-b75f-62b170fc9d0c/status?api_token=qcOpIiGT3XMLKA0B)](https://assertible.com/dashboard#/tests/6ec4de9f-63d4-4921-b75f-62b170fc9d0c)
 
 **Install**: 
 >$ pip3 install git+git://github.com/doylefermi/cusatexams-cli.git@master
