@@ -86,7 +86,7 @@ def handle_invalid_usage(error):
 
 @app.route("/")
 def api():
-    return "API documentation"
+    return "<b>API documentation:</b><i> URL=/fetch/regno. Pass semester, month, year and type as GET params.</i><br><br>Eg: <a href='http://cusatexams-doylefermi.rhcloud.com/fetch/12140821?semester=7&month=November&year=2016&type=Regular'>http://cusatexams-doylefermi.rhcloud.com/fetch/12140821?semester=7&month=November&year=2016&type=Regular</a>"
     
 @app.route("/fetch/<regno>",methods=['GET'])
 def fetch(regno):
